@@ -11,10 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //intent
+        var receivedId = intent.getStringExtra("id")
         var receivedName = intent.getStringExtra("name")
         var receivedNumber = intent.getStringExtra("userNumber")
 
         userNameTxt.text = receivedName
-        userNumberTxt.text = receivedNumber
+        userNumberTxt.text = "${receivedNumber}회원 (${receivedId})"
     }
 }
