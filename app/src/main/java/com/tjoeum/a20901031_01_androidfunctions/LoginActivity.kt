@@ -23,6 +23,8 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this,"이름 : ${loginName} 회원번호 : ${userNumber}",Toast.LENGTH_SHORT).show()
 
             var myIntent = Intent(this,MainActivity::class.java)
+            myIntent.putExtra("name",loginName)
+            myIntent.putExtra("userNumber",userNumber)
             startActivity(myIntent)
         }
         signUp.setOnClickListener {
