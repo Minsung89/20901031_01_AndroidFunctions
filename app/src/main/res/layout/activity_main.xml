@@ -19,16 +19,19 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/userNumberTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:layout_gravity="center"
         android:text="30번 회원"/>
+
     <TextView
+        android:id="@+id/userNameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#000000"
         android:layout_gravity="center"
-        android:text="구민성"/>
+        android:text="구민성"
+        android:textColor="#000000"
+        android:textSize="30sp" />
 </LinearLayout>
